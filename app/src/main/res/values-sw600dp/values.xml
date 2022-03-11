@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_field_size">512dp</dimen>
+    <dimen name="user_image_size">256dp</dimen>
+    <dimen name="text_size">32sp</dimen>
+</resources>

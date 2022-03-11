@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="greetingPrefix">Hello</string>
+    <string name="turnPrefix">Turn</string>
+    <string name="defaultUserName">New user</string>
+    <string name="newGameButton">New game</string>
+    <string name="scoreButton">Score</string>
+    <string name="userImage">userAvatar</string>
+    <string name="score">Score</string>
+    <string name="scoreXPrefix">"X:"</string>
+    <string name="scoreOPrefix">"O:"</string>
+    <string name="winnerPrefix">"Winner is"</string>
+    <string name="tie">"Tie"</string>
+    <string name="reset">Reset</string>
+</resources>
