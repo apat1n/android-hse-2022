@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Крестики-нолики</string>
+    <string name="greetingPrefix">Привет</string>
+    <string name="turnPrefix">Ход</string>
+    <string name="defaultUserName">Новый пользователь</string>
+    <string name="newGameButton">Новая игра</string>
+    <string name="scoreButton">Счет</string>
+    <string name="userImage">Аватарка</string>
+    <string name="score">Очки</string>
+    <string name="scoreXPrefix">"X:"</string>
+    <string name="scoreOPrefix">"O:"</string>
+    <string name="winnerPrefix">"Победитель"</string>
+    <string name="tie">"Ничья"</string>
+    <string name="reset">Сбросить</string>
+</resources>
