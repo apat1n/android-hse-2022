@@ -47,9 +47,12 @@ public class MainActivity extends AppCompatActivity {
         greetingTextView.setOnClickListener(view -> {
             System.out.println("greetingTextView clicked");
             greetingEditText.requestFocus();
+            greetingEditText.setSelection(0);
+            greetingEditText.setText(AppContext.userName);
             greetingEditText.setVisibility(View.VISIBLE);
             greetingTextView.setVisibility(View.INVISIBLE);
 
+            final InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             greetingEditText.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -57,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                    System.out.println("onTextChanged" + i + " " + i1 + " " + i2);
+
                 }
 
                 @Override
@@ -72,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.toggleSoftInputFromWindow(greetingEditText.getApplicationWindowToken(), InputMethodManager.SHOW_FORCED, 0);
+            imm.showSoftInput(greetingEditText, InputMethodManager.SHOW_FORCED);
         });
 
         imageView = findViewById(R.id.userImage);
